@@ -1,1 +1,16 @@
+<div class="card">
+<h3>📅 Daily Production Log</h3>
+<input id="prodDate" type="date" style="width:48%">
+<select id="prodProduct" style="width:48%">
+<option value="">Select Product</option>
+</select>
+<input id="prodQty" type="number" placeholder="Qty Produced: 500" style="width:48%">
+<input id="prodWaste" type="number" placeholder="Waste: 5" style="width:48%">
+<input id="prodDesc" placeholder="Description: Luto ni Juan, medyo durog" style="width:100%">
+<button class="btn" onclick="addProductionLog()" style="width:100%;margin-top:5px;">+ Log Production</button>
 
+<div style="margin-top:10px;max-height:200px;overflow-y:auto;border-top:1px solid #ddd;padding-top:8px;">
+<div style="font-weight:bold;font-size:12px;margin-bottom:5px;">Today's Logs:</div>
+<div id="productionLogsList"></div>
+</div>
+</div>
